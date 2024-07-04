@@ -60,7 +60,7 @@ window.onload = async (event) => {
             serverDescElement.textContent = captchaRequireDesc ?? "This server requires a captcha. Click the captcha below to verify.";
 
             turnstile.render('#myWidget', {
-                sitekey: '0x4AAAAAAAKIBcu9J8jgbnL8',
+                sitekey: '0x4AAAAAAAeZXleqdC8JPIL1',
                 callback: function(token) {
                     payload.token = token;
                     resolve();
