@@ -13,7 +13,7 @@ READ HERE how to fully customize the messages shown to your members https://gith
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Verify for Discord</title>
+    <title>Подтвердить наличие Discord</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="preload" href="./src/green_circle_checkmark.svg" as="image">
     <link rel="preload" href="./src/red_circle_checkmark.svg" as="image">
@@ -26,7 +26,7 @@ READ HERE how to fully customize the messages shown to your members https://gith
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script>
         $(document).ready(function () {
-            document.title = `VaultCord.com verify for ${window.location.hostname}`;
+            document.title = `${window.location.hostname}`;
             new MutationObserver(function () {
                 $("[data-loader]").fadeOut(function () {
                     if (!$('#failureCross').is('[hidden]')) {
@@ -78,7 +78,7 @@ READ HERE how to fully customize the messages shown to your members https://gith
         <div class="flex w-full max-w-2xl flex-col items-center px-6 text-center md:px-10 mt-32">
             <div class="h-9 text-xl mb-32">
                 <img id="serverIcon" hidden style="border-radius: 51%;height: 110px;width: 110px;margin-bottom:10px;"
-                    src="https://avatars.githubusercontent.com/u/138615525?s=200&v=4">
+                    src="https://avatars.githubusercontent.com/u/117530383?s=200&v=4">
             </div>
             <div data-loader>
                 <div role="status">
@@ -91,7 +91,7 @@ READ HERE how to fully customize the messages shown to your members https://gith
                             d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
                             fill="currentFill" />
                     </svg>
-                    <span class="sr-only">Loading...</span>
+                    <span class="sr-only">Загрузка...</span>
                 </div>
             </div>
 
@@ -113,7 +113,7 @@ READ HERE how to fully customize the messages shown to your members https://gith
                             d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
                             fill="currentFill" />
                     </svg>
-                    <span class="sr-only">Pending...</span>
+                    <span class="sr-only">В ожидании...</span>
                 </div>
             </div>
             <div id="failureCross" hidden class="w-10 h-10 text-red-500 mb-2 hidden animate-pulse">
@@ -139,7 +139,7 @@ READ HERE how to fully customize the messages shown to your members https://gith
 
             <a id="serverVerifyBtn" href="javascript:void(0)"
                 class="text-white border-2 hover:opacity-70 focus:ring-0 focus:outline-none transition duration-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center me-2 mb-3 w-96 hidden">
-                Verify </a>
+               Я не робот </a>
 
             <div class="hidden">
                 <div id="serverTitle" class="text-xs" vc-invalid-domain="Invalid domain"
@@ -148,17 +148,6 @@ READ HERE how to fully customize the messages shown to your members https://gith
                 </div>
             </div>
         </div>
-
-
-
-        <footer class="rounded-lg">
-            <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                <span class="text-sm text-gray-300 sm:text-center">
-                    Service provided by <a
-                        class="text-red-500 animate-pulse" href="https://vaultcord.com"
-                        target="_blank">VaultCord.com</a> | <a
-                        class="text-red-500 animate-pulse" href="https://vaultcord.com/privacy"
-                        target="_blank">Privacy Policy</a>
                 </span>
             </div>
         </footer>
